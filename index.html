@@ -1,61 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="stylesheet" href="style.css">
-    <style>
- body {
-  padding: 25px;
-  background-color: black;
-  color: white;
-}
-.dark-mode {
-  background-color: gray;
-  color: black;
-}
-    </style>
+  <title>Uncynth</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="header">
-        <img class="logo" src="logo.png" alt="logo" width="125px" height="25px"></a>
-        <ul>
-            <li><a class="active" href=index.html>Home</a></li>
-            <li><a href="education.html ">Education</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><button onclick="myFunction()"><img src="light.png" alt="button" height="20px" width="20px"></button></li>
-        </ul>
-    </div>
-        <br>
-        <div class="section">
-            <p>Hi There!</p>
-            <h1>I am <B class="name">HIACYNTH</B></h1>
-            <h2> A Future Developer</h2>
-            <p>I make the simple complex.</p>
-            <br>
-            <a class="Contact">Know Me</a><br>
-            <div class="footer">
-                    <div class="tooltip"><img src="facebook.png"  class="fb"> <span class="tooltiptext">Facebook</span></div>
-                    <div class="tooltip"><img src="instagram.png" class="ig"><span class="tooltiptext">Instagram</span></div>
-                    <div class="tooltip"><img src="tiktok.png" class="tt"><span class="tooltiptext">Tiktok</span></div>
-                    <div class="tooltip"><img src="envelope.png" class="em"><span class="tooltiptext">Email</span></div>
-                    <div class="tooltip"><img src="phone.png" class="ph"><span class="tooltiptext">Phone</span></div>
-                
-             </div>
-        </div> 
-        <div>  
-            <img src="me.png" class="me">
-        </div>
-        <script>
-            function myFunction() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-            </script>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
     
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <a class="navbar-brand" href="#myPage"><img src="assets/logo.png" alt="" height="25px" width="70px"></a>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#hobbies">HOBBIES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text">
+  <p>Hi There!</p>
+  
+  <h1>I am <B class="name">HIACYNTH</B></h1>
+  
+  <h2 style="color:#068747;"> A Future Developer</h2>
+  <p>I make the simple complex.</p>
+  <br>
+  <a class="Contact" href="#about">Know Me</a> 
+ 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h1>About Me</h1><br>
+      <h4>Hiacynth G. Bacani 20 years old from Nattanzan, Iguig, cagayan</h4><br>
+      <p>I was born on September 18, 2003 at Magsaysay, Saguday Quirino. I grew up at iguig cagayan and finished my elementary to highschool there.
+        I am now a third year student taking up Bachelor of Science in Accounting Information System at CSU Gonzaga Campus. My biggest dream is to become rich 
+        without doing anything, and how will i do that? I don't even know yet.
+      </p>
+      <br><a class="btn btn-default btn-lg" href="#contact">Get in Touch</a>
+      
+    </div>
+    <div class="me">
+      <img src="assets/pp.jpg" alt="" width="300px">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="hobbies" class="container-fluid text-center">
+  <h2>HOBBIES</h2>
+  <h4> I do.</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-dance logo-small"></span>
+      <h4>DANCE</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-ball logo-small"></span>
+      <h4>VOLLEYBALL</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-basketball logo-small"></span>
+      <h4>BASKETBALL</h4>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <h4>SMOKE</h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>VIDEOGRAPHY</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon- logo-small"></span>
+      <h4 style="color:#303030;">CYCLING</h4>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What I have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+      <br>
+        <p><strong>Video</strong></p>
+        <video width="400" height="300" controls>
+          <source src="assets/myvid.MOV" type="video/mp4">
+        </video><br><br>
+        <p>Yes, I did this</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <br>
+        <p><strong>Editted vlog</strong></p>
+        <video width="400" height="300" controls>
+          <source src="assets/vlog.MOV" type="video/mp4">
+        </video><br><br>
+        <p>huyyyy</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <br>
+        <p><strong>Dance</strong></p>
+        <video width="400" height="300" controls>
+          <source src="assets/dance.MOV" type="video/mp4">
+        </video><br><br>
+        <p>Yes, CHAMP</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What I beleve for</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Real man like real numbers are rare!"<br><span>Yours  truly,</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>Nagaragaw</span></h4>
+      </div>
+      <div class="item">
+        <h4>"It is, what is it?"<br><span>Enkkk!</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (education Section) -->
+<div id="education" class="container-fluid">
+  <div class="text-center">
+    <h2>Education</h2>
+    <h4>Schools attended</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>Garab Elementary School</h3>
+        </div>
+        <div class="panel-body">
+          <img src="assets/elem.jpg" alt="" class="educ" width="250px">
+        </div>
+        <div class="panel-footer">
+          <h3>Elementary</h3>
+          <h4>2009-2015</h4>
+          <a class="btn btn-lg" href="https://www.facebook.com/profile.php?id=100068348053173">Visit Now</a>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>VDTNHS</h3>
+        </div>
+        <div class="panel-body">
+          <img src="assets/hs.jpg" alt="" class="educ" width="250px">
+        </div>
+        <div class="panel-footer">
+          <h3>Highschool</h3>
+          <h4>2015-2021</h4>
+          <a class="btn btn-lg" href="https://www.facebook.com/VDTNHS">Visit Now</a>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h3>CSU-G</h3>
+        </div>
+        <div class="panel-body">
+          <img src="assets/csu.jpg" alt="" class="educ" width="250px">
+        </div>
+        <div class="panel-footer">
+          <h3>On process</h3>
+          <h4>2021-Present</h4>
+          <a class="btn btn-lg" href="https://www.facebook.com/officeofthe.CEOCSUG">Visit Now</a>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h1 class="text-center"><span class="glyphicon glyphicon-user"></span>CONTACT</h1>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact me and I'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/dir//18.251343,122.0026828/@18.252459,122.0028039,15.82z?entry=ttu"> Flourishing, Gonzaga, Cagayan , Ph 3513</a></p>
+      <p><span class="glyphicon glyphicon-phone"></span> +639457889552</p>
+      <p><span class="glyphicon glyphicon-envelope"></span><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvnrmPLVtCfGkRrSwLwDhCcjCKbFfWfjmLcHVdRCbgVvQVwdNSMpbdcWgfpTFKvrXZmBMg"> hiacynthbacani182003@gmail.com</a></p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+<br><br><br><br>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Your's truly, <a href="https://www.facebook.com/profile.php?id=100069126226674" title="Visit Now myfacebook">HIACYNTH BACANI</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
 </html>
