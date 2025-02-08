@@ -1,3 +1,61 @@
-# this is my github
-
-welcome to my website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ body {
+  padding: 25px;
+  background-color: black;
+  color: white;
+}
+.dark-mode {
+  background-color: gray;
+  color: black;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="logo.png" alt="logo" width="125px" height="25px"></a>
+        <ul>
+            <li><a class="active" href=index.html>Home</a></li>
+            <li><a href="education.html ">Education</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><button onclick="myFunction()"><img src="light.png" alt="button" height="20px" width="20px"></button></li>
+        </ul>
+    </div>
+        <br>
+        <div class="section">
+            <p>Hi There!</p>
+            <h1>I am <B class="name">HIACYNTH</B></h1>
+            <h2> A Future Developer</h2>
+            <p>I make the simple complex.</p>
+            <br>
+            <a class="Contact">Know Me</a><br>
+            <div class="footer">
+                    <div class="tooltip"><img src="facebook.png"  class="fb"> <span class="tooltiptext">Facebook</span></div>
+                    <div class="tooltip"><img src="instagram.png" class="ig"><span class="tooltiptext">Instagram</span></div>
+                    <div class="tooltip"><img src="tiktok.png" class="tt"><span class="tooltiptext">Tiktok</span></div>
+                    <div class="tooltip"><img src="envelope.png" class="em"><span class="tooltiptext">Email</span></div>
+                    <div class="tooltip"><img src="phone.png" class="ph"><span class="tooltiptext">Phone</span></div>
+                
+             </div>
+        </div> 
+        <div>  
+            <img src="me.png" class="me">
+        </div>
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+            </script>
+    
+</body>
+</html>
