@@ -1,210 +1,62 @@
-
+/* Base styles for all devices */
 body {
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
   color: #818181;
 }
-h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: black;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-h4 {
-  font-size: 19px;
-  line-height: 1.375em;
-  color: #303030;
-  font-weight: 400;
-  margin-bottom: 30px;
-}  
-.jumbotron {
-  background-image: url(me1.png);
-  background-size: cover;
-  color: #fff;
-  padding: 100px 25px;
-  font-family: Montserrat, sans-serif;
-}
-.container-fluid {
-  padding: 60px 50px;
-}
-.bg-grey {
-  background-color: #f6f6f6;
-}
-.logo-small {
-  color: #068747;
-  font-size: 50px;
-}
-.logo {
-  color: #068747;
-  font-size: 200px;
-}
-.thumbnail {
-  padding: 0 0 15px 0;
-  border: none;
-  border-radius: 0;
-}
-.thumbnail img {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-}
-.carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: #068747;
-}
-.carousel-indicators li {
-  border-color: #068747;
-}
-.carousel-indicators li.active {
-  background-color: #068747;
-}
-.item h4 {
-  font-size: 19px;
-  line-height: 1.375em;
-  font-weight: 400;
-  font-style: italic;
-  margin: 70px 0;
-}
-.item span {
-  font-style: normal;
-}
-.panel {
-  border: 1px solid #068747; 
-  border-radius:0 !important;
-  transition: box-shadow 0.5s;
-}
-.panel:hover {
-  box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-}
-.panel-footer .btn:hover {
-  border: 1px solid#068747;
-  background-color: #fff !important;
-  color: #068747;
-}
-.panel-heading {
-  color: #fff !important;
-  background-color: #068747 !important;
-  padding: 25px;
-  border-bottom: 1px solid transparent;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.panel-footer {
-  background-color: white !important;
-}
-.panel-footer h3 {
-  font-size: 32px;
-}
-.panel-footer h4 {
-  color: #aaa;
-  font-size: 14px;
-}
-.panel-footer .btn {
-  margin: 15px 0;
-  background-color: #068747;
-  color: #fff;
-}
-.navbar {
-  margin-bottom: 0;
-  background-color: black;
-  z-index: 9999;
-  border: 0;
-  font-size: 12px !important;
-  line-height: 1.42857143 !important;
-  letter-spacing: 4px;
-  border-radius: 0;
-  font-family: Montserrat, sans-serif;
-}
-.navbar li a, .navbar .navbar-brand {
-  color: #068747 !important;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: black !important;
-  background-color: #068747 !important;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
-footer .glyphicon {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color:#068747;
-}
-.slideanim {visibility:hidden;}
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-}
 
-b.name {
-  color: #068747;
-}
-
-b.name:hover {
-  color: white;
-}
-a.Contact {
-  background-color: black;
-  padding: 10px 20px;
-  color: #068747;
-}
-a.Contact:hover {
-  background-color:black;
-  padding: 20px 30px;
-
-}
-
-img {
-  border-radius: 50%;
-}
-.me {
-  position: absolute;
-  padding-left: 1000px;
-  padding-top: 50px;
-}
-.panel-body{
-
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .jumbotron {
+    padding: 100px 25px;
   }
 }
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  } 
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    padding: 80px 100px;
   }
 }
-@media screen and (max-width: 768px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
-  .btn-lg {
-    width: 100%;
-    margin-bottom: 35px;
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .container-fluid {
+    padding: 100px 150px;
   }
 }
+
+/* Small devices (phones, 480px and down) */
 @media screen and (max-width: 480px) {
   .logo {
     font-size: 150px;
+  }
+  .navbar {
+    font-size: 10px !important;
+  }
+  .jumbotron {
+    padding: 50px 15px;
+  }
+  .panel-footer h3 {
+    font-size: 24px;
+  }
+  .panel-footer h4 {
+    font-size: 12px;
+  }
+}
+
+/* Additional styles for very small devices (less than 320px) */
+@media screen and (max-width: 320px) {
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .btn-lg {
+    padding: 10px;
   }
 }
