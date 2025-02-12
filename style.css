@@ -149,12 +149,12 @@ b.name:hover {
   color: white;
 }
 a.Contact {
-  background-color: black;
+  background-color: #068747;
   padding: 10px 20px;
-  color: #068747;
+  color: black;
 }
 a.Contact:hover {
-  background-color:black;
+  background-color:#068747;
   padding: 20px 30px;
 
 }
