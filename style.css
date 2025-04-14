@@ -1,138 +1,165 @@
-
 body {
-  font: 400 15px Lato, sans-serif;
+  font: 400 1rem Lato, sans-serif; /* Use rem for font size */
   line-height: 1.8;
   color: #818181;
 }
+
 h2 {
-  font-size: 24px;
+  font-size: 1.5rem; /* Use rem for font size */
   text-transform: uppercase;
   color: black;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 2rem; /* Use rem for margin */
 }
+
 h4 {
-  font-size: 19px;
+  font-size: 1.2rem; /* Use rem for font size */
   line-height: 1.375em;
   color: #303030;
   font-weight: 400;
-  margin-bottom: 30px;
-}  
+  margin-bottom: 2rem; /* Use rem for margin */
+}
+
 .jumbotron {
   color: #fff;
-  padding: 100px 25px;
+  padding: 6.25rem 1.5625rem; /* Use rem for padding */
   font-family: Montserrat, sans-serif;
 }
+
 .container-fluid {
-  padding: 60px 50px;
+  padding: 3.75rem 3.125rem; /* Use rem for padding */
 }
+
 .bg-grey {
   background-color: #f6f6f6;
 }
+
 .logo-small {
   color: #068747;
-  font-size: 50px;
+  font-size: 3.125rem; /* Use rem for font size */
 }
+
 .logo {
   color: #068747;
-  font-size: 200px;
+  font-size: 12.5rem; /* Use rem for font size */
 }
+
 .thumbnail {
-  padding: 0 0 15px 0;
+  padding: 0 0 1rem; /* Use rem for padding */
   border: none;
   border-radius: 0;
 }
+
 .thumbnail img {
   width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 0.625rem; /* Use rem for margin */
 }
+
 .carousel-control.right, .carousel-control.left {
   background-image: none;
   color: #068747;
 }
+
 .carousel-indicators li {
   border-color: #068747;
 }
+
 .carousel-indicators li.active {
   background-color: #068747;
 }
+
 .item h4 {
-  font-size: 19px;
+  font-size: 1.2rem; /* Use rem for font size */
   line-height: 1.375em;
   font-weight: 400;
   font-style: italic;
-  margin: 70px 0;
+  margin: 4.375rem 0; /* Use rem for margin */
 }
+
 .item span {
   font-style: normal;
 }
+
 .panel {
   border: 1px solid #068747; 
-  border-radius:0 !important;
+  border-radius: 0 !important;
   transition: box-shadow 0.5s;
 }
+
 .panel:hover {
   box-shadow: 10px 0px 40px rgba(0,0,0, .2);
 }
+
 .panel-footer .btn:hover {
-  border: 1px solid#068747;
+  border: 1px solid #068747;
   background-color: #fff !important;
   color: #068747;
 }
+
 .panel-heading {
   color: #fff !important;
   background-color: #068747 !important;
-  padding: 25px;
+  padding: 1.5625rem; /* Use rem for padding */
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-radius: 0; /* Simplified border radius */
 }
+
 .panel-footer {
   background-color: white !important;
 }
+
 .panel-footer h3 {
-  font-size: 32px;
+  font-size: 2rem; /* Use rem for font size */
 }
+
 .panel-footer h4 {
   color: #aaa;
-  font-size: 14px;
+  font-size: 0.875rem; /* Use rem for font size */
 }
+
 .panel-footer .btn {
-  margin: 15px 0;
+  margin: 0.9375rem 0; /* Use rem for margin */
   background-color: #068747;
   color: #fff;
 }
+
 .navbar {
   margin-bottom: 0;
   background-color: black;
   z-index: 9999;
   border: 0;
-  font-size: 12px !important;
+  font-size: 0.75rem !important; /* Use rem for font size */
   line-height: 1.42857143 !important;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem; /* Use rem for letter spacing */
   border-radius: 0;
-  font-family: Montserrat, sans-serif;
+  font-family: Mont serrat, sans-serif;
 }
+
 .navbar li a, .navbar .navbar-brand {
   color: #068747 !important;
 }
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: black !important;
   background-color: #068747 !important;
 }
+
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: #fff !important;
 }
+
 footer .glyphicon {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color:#068747;
+  font-size: 1.25rem; /* Use rem for font size */
+  margin-bottom: 1.25rem; /* Use rem for margin */
+  color: #068747;
 }
-.slideanim {visibility:hidden;}
+
+.slideanim {
+  visibility: hidden;
+}
+
 .slide {
   animation-name: slide;
   -webkit-animation-name: slide;
@@ -148,26 +175,28 @@ b.name {
 b.name:hover {
   color: white;
 }
+
 a.Contact {
   background-color: #068747;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Use rem for padding */
   color: black;
 }
-a.Contact:hover {
-  background-color:#068747;
-  padding: 20px 30px;
 
+a.Contact:hover {
+  background-color: #068747;
+  padding: 1.25rem 1.875rem; /* Use rem for padding */
 }
 
 img {
   border-radius: 50%;
 }
-.me {
-  padding-left: 1000px;
-  padding-top: 50px;
-}
-.panel-body{
 
+.me {
+  padding-left: 62.5rem; /* Use rem for padding */
+  padding-top: 3.125rem; /* Use rem for padding */
+}
+
+.panel-body {
 }
 
 @keyframes slide {
@@ -180,6 +209,7 @@ img {
     transform: translateY(0%);
   }
 }
+
 @-webkit-keyframes slide {
   0% {
     opacity: 0;
@@ -190,18 +220,65 @@ img {
     -webkit-transform: translateY(0%);
   }
 }
+
 @media screen and (max-width: 768px) {
   .col-sm-4 {
     text-align: center;
-    margin: 25px 0;
+    margin: 1.5625rem 0; /* Use rem for margin */
   }
   .btn-lg {
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem; /* Use rem for margin */
   }
 }
+
 @media screen and (max-width: 480px) {
   .logo {
-    font-size: 150px;
+    font-size: 9.375rem; /* Use rem for font size */
+  }
+} ```css
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 90%; /* Responsive width */
+  margin: 1rem auto; /* Centering with margin */
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #068747;
+  color: white;
+}
+
+.button {
+  padding: 0.5rem 1rem; /* Responsive padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #068747;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #005f3d; /* Darker shade on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .header, .footer {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
+  
+  .button {
+    width: 100%; /* Full width button on mobile */
   }
 }
