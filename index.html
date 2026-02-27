@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Uncynth</title>
+  <title>Hiacynth Personal Portfolio - Developer & Videographer</title>
   <link rel="icon" type="image/x-icon" href="icon.png">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hiacynth G. Bacani's personal portfolio showcasing skills in development, videography, and creative work.">
+  <meta name="keywords" content="portfolio, developer, videographer, cagayan, philippines">
+  <meta name="author" content="Hiacynth G. Bacani">
+  <meta name="theme-color" content="#068747">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -16,9 +22,16 @@
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="logo.png" alt="Logo" height="25px" width="70px"></a>
+    </div>
     
     <div class="collapse navbar-collapse" id="myNavbar">
-      <a class="navbar-brand" href="#myPage"><img src="logo.png" alt="" height="25px" width="70px"></a>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#hobbies">HOBBIES</a></li>
@@ -30,149 +43,178 @@
   </div>
 </nav>
 
-<div class="jumbotron text" style="background-image: url(me1.png); background-size: cover;">
-  <p>Hi There!</p>
-  
-  <h1>I am <B class="name">HIACYNTH</B></h1>
-  
-  <h2 style="color:#068747;"> A Future Developer</h2>
-  <p>I make the simple complex.</p>
-  <br>
-  <a class="Contact" href="#about">Know Me</a> 
- 
+<div class="jumbotron" id="hero">
+  <div class="hero-overlay">
+    <p class="hero-greeting">Hi There!</p>
+    <h1>I am <span class="name">HIACYNTH</span></h1>
+    <h2 class="hero-subtitle">A Future Developer</h2>
+    <p class="hero-tagline">I make the simple complex.</p>
+    <a class="btn-primary" href="#about">Know Me</a>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h1>About Me</h1><br>
-      <h4>Hiacynth G. Bacani 21 years old from Nattanzan, Iguig, cagayan</h4><br>
-      <p>I was born on September 18, 2003 at Magsaysay, Saguday Quirino. I grew up in Iguig Cagayan and finished my elementary to highschool there.
-        I am now a fourth year student taking up Bachelor of Science in Accounting Information System at CSU Gonzaga Campus. My biggest dream is to become rich 
-        without doing anything, and how will i do that? I don't even know yet.
-      </p>
-      <br><a class="btn btn-default btn-lg" href="#contact">Get in Touch</a>
-      
+<section id="about" class="section-about">
+  <div class="container">
+    <div class="section-header">
+      <h1>About Me</h1>
     </div>
-    <div class="me">
-      <img src="pp.jpg" alt="" width="300px">
+    <div class="row">
+      <div class="col-sm-8 col-xs-12 about-content">
+        <h3 class="about-name">Hiacynth G. Bacani</h3>
+        <p class="about-intro">21 years old | Nattanzan, Iguig, Cagayan</p>
+        <p class="about-text">I was born on September 18, 2003 at Magsaysay, Saguday Quirino. I grew up in Iguig Cagayan and finished my elementary to high school there. I am now a fourth year student taking up Bachelor of Science in Accounting Information System at CSU Gonzaga Campus. My biggest dream is to become rich without doing anything, and how will I do that? I don't even know yet.</p>
+        <a class="btn-primary" href="#contact">Get in Touch</a>
+      </div>
+      <div class="col-sm-4 col-xs-12 about-image">
+        <img src="pp.jpg" alt="Profile Picture" class="img-responsive profile-img">
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Container (Services Section) -->
-<div id="hobbies" class="container-fluid text-center">
-  <h2>HOBBIES</h2>
-  <h4> I do.</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-dance logo-small"></span>
-      <h4>DANCE</h4>
+<!-- Container (Hobbies Section) -->
+<section id="hobbies" class="section-hobbies">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>My Interests & Hobbies</h2>
+      <p class="section-subtitle">Things I'm passionate about</p>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-ball logo-small"></span>
-      <h4>VOLLEYBALL</h4>
+    <div class="row slideanim">
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-cd"></span>
+        </div>
+        <h4>Dance</h4>
+      </div>
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-play"></span>
+        </div>
+        <h4>Volleyball</h4>
+      </div>
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-screenshot"></span>
+        </div>
+        <h4>Basketball</h4>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-basketball logo-small"></span>
-      <h4>BASKETBALL</h4>
+    <div class="row slideanim hobbies-bottom">
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-console"></span>
+        </div>
+        <h4>Coding</h4>
+      </div>
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-film"></span>
+        </div>
+        <h4>Videography</h4>
+      </div>
+      <div class="col-sm-4 col-xs-12 hobby-card">
+        <div class="hobby-icon">
+          <span class="glyphicon glyphicon-road"></span>
+        </div>
+        <h4>Cycling</h4>
+      </div>
     </div>
   </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <h4>Code</h4>
-    </div>
-    <div class="col-sm-4">
-      <h4>VIDEOGRAPHY</h4>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon- logo-small"></span>
-      <h4 style="color:#303030;">CYCLING</h4>
-    </div>
-  </div>
-</div>
-<br><br><br><br><br><br>
+</section>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What I have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-      <br>
-        <p><strong>Video</strong></p>
-        <video width="400" height="300" controls>
-          <source src="myvid.MOV" type="video/mp4">
-        </video><br><br>
-        <p>Yes, I did this</p>
+<section id="portfolio" class="section-portfolio">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Portfolio</h2>
+      <p class="section-subtitle">My Creative Work & Projects</p>
+    </div>
+    <div class="row slideanim">
+      <div class="col-sm-4 col-xs-12">
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video controls>
+              <source src="myvid.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h4>Video Production</h4>
+          <p>Yes, I did this</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video controls>
+              <source src="vlog.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h4>Edited Vlog</h4>
+          <p>Professional video editing</p>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="portfolio-item">
+          <div class="video-container">
+            <video controls>
+              <source src="dance.MOV" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <h4>Dance Performance</h4>
+          <p>Creative choreography</p>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <br>
-        <p><strong>Editted vlog</strong></p>
-        <video width="400" height="300" controls>
-          <source src="vlog.MOV" type="video/mp4">
-        </video><br><br>
-        <p>huyyyy</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <br>
-        <p><strong>Dance</strong></p>
-        <video width="400" height="300" controls>
-          <source src="dance.MOV" type="video/mp4">
-        </video><br><br>
-        <p>Yes, CHAMP</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What I beleve for</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+    <div class="testimonials-section">
+      <h3 class="testimonials-title">What People Say</h3>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"Real man like real numbers are rare!"<br><span>Yours  truly,</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>Nagaragaraw</span></h4>
-      </div>
-      <div class="item">
-        <h4>"It is, what is it?"<br><span>Enkkk!</span></h4>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <h4>"Real man like real numbers are rare!"</h4>
+            <p class="testimonial-author">— Yours truly</p>
+          </div>
+          <div class="item">
+            <h4>"One word... WOW!!"</h4>
+            <p class="testimonial-author">— Nagaragaraw</p>
+          </div>
+          <div class="item">
+            <h4>"It is, what is it?"</h4>
+            <p class="testimonial-author">— Enkkk!</p>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-</div>
+</section>
 
-<!-- Container (education Section) -->
-<div id="education" class="container-fluid">
-  <div class="text-center">
-    <h2>Education</h2>
-    <h4>Schools attended</h4>
-  </div>
+<!-- Container (Education Section) -->
+<section id="education" class="section-education">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Education</h2>
+      <p class="section-subtitle">Schools & Academic Background</p>
+    </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
@@ -220,36 +262,63 @@
       </div>      
     </div>    
   </div>
-</div>
+</section>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h1 class="text-center"><span class="glyphicon glyphicon-user"></span>CONTACT</h1>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact me and I'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/@17.7499708,121.7482187,14.7z?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D"> Zone 7, Garab, Iguig, Cagayan , Ph 3504</a></p>
-      <p><span class="glyphicon glyphicon-phone"></span> +639457889552</p>
-      <p><span class="glyphicon glyphicon-envelope"></span><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvnrmPLVtCfGkRrSwLwDhCcjCKbFfWfjmLcHVdRCbgVvQVwdNSMpbdcWgfpTFKvrXZmBMg"> hiacynthbacani182003@gmail.com</a></p>
+<section id="contact" class="section-contact">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Get in Touch</h2>
+      <p class="section-subtitle">I'd love to hear from you</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+    <div class="row">
+      <div class="col-sm-5 col-xs-12 contact-info">
+        <p class="contact-intro">Contact me and I'll get back to you within 24 hours.</p>
+        <div class="contact-item">
+          <span class="glyphicon glyphicon-map-marker"></span>
+          <a href="https://www.google.com/maps/@17.7499708,121.7482187,14.7z?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D">Zone 7, Garab, Iguig, Cagayan, PH 3504</a>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        <div class="contact-item">
+          <span class="glyphicon glyphicon-phone"></span>
+          <a href="tel:+639457889552">+63 945 788 9552</a>
+        </div>
+        <div class="contact-item">
+          <span class="glyphicon glyphicon-envelope"></span>
+          <a href="mailto:hiacynthbacani182003@gmail.com">hiacynthbacani182003@gmail.com</a>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+    <div class="col-sm-7 col-xs-12 contact-form slideanim">
+      <form>
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
+          </div>
+          <div class="col-sm-6 col-xs-12 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Your Email" type="email" required>
+          </div>
         </div>
-      </div>
+        <div class="form-group">
+          <textarea class="form-control" id="comments" name="comments" placeholder="Your Message" rows="5"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn-primary" type="submit">Send Message</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a class="scroll-to-top" href="#myPage" title="Back to Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p class="footer-text">Crafted with <span class="heart">❤</span> by <a href="https://www.facebook.com/profile.php?id=100069126226674" title="Visit Facebook Profile">HIACYNTH BACANI</a></p>
+    <p class="footer-year">&copy; 2026 All Rights Reserved</p>
+  </div>
+</footer>
 
 <!-- Image of location/map -->
 
