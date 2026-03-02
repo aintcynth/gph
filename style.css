@@ -1030,6 +1030,7 @@ p {
 .hero-overlay {
   max-width: 800px;
 }
+}
 
 /* ============================= */
 /* TEXT ANIMATION */
@@ -1117,6 +1118,5 @@ p {
 @keyframes blink {
   0% { border-color: transparent; }
   100% { border-color: white; }
-}
 }
 
